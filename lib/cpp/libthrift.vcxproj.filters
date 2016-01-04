@@ -104,6 +104,12 @@
     <ClCompile Include="src\thrift\protocol\TProtocol.cpp" />
     <ClCompile Include="src\thrift\TOutput.cpp" />
     <ClCompile Include="src\thrift\windows\OverlappedSubmissionThread.cpp" />
+    <ClCompile Include="src\thrift\async\TConcurrentClientSyncInfo.cpp">
+      <Filter>async</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thrift\server\TConnectedClient.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\thrift\transport\TBufferTransports.h">

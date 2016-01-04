@@ -36,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\thrift\async\TAsyncChannel.cpp" />
+    <ClCompile Include="src\thrift\async\TConcurrentClientSyncInfo.cpp" />
     <ClCompile Include="src\thrift\concurrency\BoostMonitor.cpp" />
     <ClCompile Include="src\thrift\concurrency\BoostMutex.cpp" />
     <ClCompile Include="src\thrift\concurrency\BoostThreadFactory.cpp" />
@@ -49,6 +50,7 @@
     <ClCompile Include="src\thrift\protocol\TJSONProtocol.cpp" />
     <ClCompile Include="src\thrift\protocol\TProtocol.cpp" />
     <ClCompile Include="src\thrift\protocol\TMultiplexedProtocol.cpp" />
+    <ClCompile Include="src\thrift\server\TConnectedClient.cpp" />
     <ClCompile Include="src\thrift\server\TSimpleServer.cpp" />
     <ClCompile Include="src\thrift\server\TThreadPoolServer.cpp" />
     <ClCompile Include="src\thrift\server\TThreadedServer.cpp" />
