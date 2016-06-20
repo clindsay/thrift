@@ -46,7 +46,7 @@ NSString * const kTSockerServer_TransportKey = @"TSockerServer_Transport";
     protocolFactory: (id <TProtocolFactory>) protocolFactory
    processorFactory: (id <TProcessorFactory>) processorFactory
 {
-  CFSocketRef socket = [self createSocketWithPort:port];
+  CFSocketRef socket = [[self class] createSocketWithPort:port];
   if (socket == NULL) {
       return nil;
   }
@@ -57,7 +57,7 @@ NSString * const kTSockerServer_TransportKey = @"TSockerServer_Transport";
   return self;
 }
 
-- (CFSocketRef) createSocketWithPort: (int) port
++ (CFSocketRef) createSocketWithPort: (int) port
 {
   CFSocketRef socket = CFSocketCreate(kCFAllocatorDefault, PF_INET, SOCK_STREAM, IPPROTO_TCP, 0, NULL, NULL);
   if (socket) {
@@ -127,7 +127,7 @@ NSString * const kTSockerServer_TransportKey = @"TSockerServer_Transport";
    processorFactory: (id <TProcessorFactory>) processorFactory
 {
   mDomainSocketPath = path;
-  CFSocketRef socket = [self createSocketWithPath:path];
+  CFSocketRef socket = [[self class] createSocketWithPath:path];
   if (socket == NULL) {
       return nil;
   }
@@ -138,7 +138,7 @@ NSString * const kTSockerServer_TransportKey = @"TSockerServer_Transport";
   return self;
 }
 
-- (CFSocketRef) createSocketWithPath: (NSString *) path
++ (CFSocketRef) createSocketWithPath: (NSString *) path
 {
   CFSocketRef socket = CFSocketCreate(kCFAllocatorDefault, PF_LOCAL, SOCK_STREAM, IPPROTO_IP, 0, NULL, NULL);
   if (socket) {
