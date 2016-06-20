@@ -30,6 +30,8 @@
 - (id) initWithHostname: (NSString *) hostname
                    port: (UInt32) port;
 
+- (id) initWithPath: (NSString *) path;
+
 @end
 
 
