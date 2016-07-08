@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name          = "thrift"
+  s.name          = "box-thrift"
   s.version       = "0.9.3"
   s.summary       = "Apache Thrift is a lightweight, language-independent software stack with an associated code generation mechanism for RPC."
   s.description   = <<-DESC
@@ -13,6 +13,6 @@ The Apache Thrift software framework, for scalable cross-language services devel
   s.osx.deployment_target = '10.8'
   s.ios.framework = 'CFNetwork'
   s.osx.framework = 'CoreServices'
-  s.source        = { :git => "https://github.com/apache/thrift.git", :tag => "0.9.3" }
+  s.source        = { :git => "git@gitenterprise.inside-box.net:desktop/box-thrift.git", :tag => "box-0.9.3" }
   s.source_files  = 'lib/cocoa/src/**/*.{h,m,swift}'
 end
