@@ -14,6 +14,6 @@ The Apache Thrift software framework, for scalable cross-language services devel
   s.osx.deployment_target = '10.8'
   s.ios.framework = 'CFNetwork'
   s.osx.framework = 'CoreServices'
-  s.source        = { :git => "git@gitenterprise.inside-box.net:desktop/box-thrift.git", :tag => "box-0.9.3" }
+  s.source        = { :git => "git@gitenterprise.inside-box.net:desktop/thrift.git", :tag => "box-0.9.3" }
   s.source_files  = 'lib/cocoa/src/**/*.{h,m,swift}'
 end
