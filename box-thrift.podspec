@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "box-thrift"
+  s.module_name   = "thrift"
   s.version       = "0.9.3"
   s.summary       = "Apache Thrift is a lightweight, language-independent software stack with an associated code generation mechanism for RPC."
   s.description   = <<-DESC
