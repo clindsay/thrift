@@ -98,7 +98,7 @@
 
 	if (connect(sockfd, (struct sockaddr *)serverAddress.bytes, (socklen_t) serverAddress.length) < 0)
 	{
-		NSLog(@"Connect error with port %s\n", strerror(errno));
+		NSLog(@"Connect error to path %@: %s\n", path, strerror(errno));
 		return nil;
 	}
 
